@@ -1,26 +1,25 @@
 ## Table of Contents
+- [Installation](#inst)
 - [Introduction](#intro)
-- [Requirements](#req)
 - [Contents](#contents)
 - [Description](#desc)
 
+## Installation
+- Python 3.6.8
+- Clone the repository
+- Run <code>pip install -r requirements.txt</code> to install dependencies
+- Run **play.py** to watch the agent play
+
+
 ## Introduction
-This project’s goal is to explore the concept of reinforcement learning and more specifically deep Q-learning, by building two agents that are capable of playing two classic Atari games (Pong and Breakout) on at least human level. It is inspired by DeepMind’s [paper](https://deepmind.com/research/publications/playing-atari-deep-reinforcement-learning), where the agent learns to beat the game with no previous knowledge on it, counting on nothing but sequences of images from the actual game. It turns out that deep q-learning can be a very powerful algorithm at some cases, as the results of the agents are quite impressive, with the Pong agent managing to find a winning strategy.
-
-## Requirements
-
-This project was carried out on Linux OS. The following tools were used:
-- keras
-- gym
-- matplotlib
-- numpy
-- cv2
-- collections
+This project’s goal is to explore the concept of reinforcement learning and more specifically deep Q-learning, by building two agents that are capable of playing a classic Atari game (Pong) on at least human level. It is inspired by DeepMind’s [paper](https://deepmind.com/research/publications/playing-atari-deep-reinforcement-learning), where the agent learns to beat the game with no previous knowledge on it, counting on nothing but sequences of images from the actual game. It turns out that deep q-learning can be a very powerful algorithm at some cases, as the results of the agents are quite impressive, with the Pong agent managing to find a winning strategy.
 
 ## Contents
-- The Breakout folder contains two Python scripts: **breakout_DQN.py** is the script that was used to train the agent on the Breakout game. The resulting model weights are stored in the file **Breakout3_model.h5**. The file **breakout_test.py** loads the weights and tests the agent's performance on the game.
+- **Pong2_model.h5** file has the model weights.
+- **agent.py** contains the agent class.
+- **utils.py** contains some utility functions.
+- **play.py** loads the weights and plays the game.
 
-- The Pong folder contains two Python scripts as well: **pong_DQN.py** is the script that was used to train the agent on the Pong game. The resulting model weights are stored in the file **Pong2_model.h5**. The file **pong_DQN_test.py** loads the weights and tests the agent's performance on the game.
 
 ## Description
 The main goal of deep Q-learning is for the agent to learn the Q-value function, because when it actually
